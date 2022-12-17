@@ -7,6 +7,7 @@ const {
   singleUser,
   userProfile,
   allUserProfile,
+  public,
 } = require("../controllers/auth.controller");
 const { isAuthenticated, isAdmin, isEditor } = require("../middleware/auth");
 
@@ -19,6 +20,9 @@ router.get("/getAll", allUserProfile);
 router.get("/getAdmin", isAuthenticated, isAdmin, userProfile);
 router.get("/getEditor", isAuthenticated, isEditor, userProfile);
 router.get("/user/:id", singleUser);
+
+//test public
+router.get("/public", public);
 
 // test nested loop
 

@@ -191,3 +191,7 @@ exports.singleUser = async (req, res, next) => {
     next(error);
   }
 };
+
+exports.public = async (req, res, next) => {
+  res.status(200).send("PUBLIC");
+};
