@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
     "start": "node index.js",
-    "build": "echo `Building.......`"
+    "build": "npm install && npm run build"
   },
   "keywords": [],
   "author": "",
