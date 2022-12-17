@@ -26,7 +26,8 @@ app.use(function (req, res, next) {
 
 var corsOptions = {
   //origin: "http://localhost:8081",
-  origin: process.env.URL_FRONTEND,
+  // origin: process.env.URL_FRONTEND,
+  origin: true,
   credentials: true,
 };
 
