@@ -148,7 +148,8 @@ const generateToken = async (user, statusCode, res) => {
     .status(statusCode)
     // .cookie("token", token, options)
     .cookie("token", token, options)
-    .json({ success: true, token });
+    // .json({ success: true, token });
+    .json({ success: true, token, user });
 };
 
 //LOG OUT USER
